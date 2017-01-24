@@ -1,0 +1,64 @@
+@import "materialize";
+
+body {
+	background-color: #ddd;
+}
+
+#banner-container {
+	padding: 0;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+	position: relative;
+	z-index: 2;
+}
+
+#banner-full {
+	padding: 0;
+	position: relative;
+}
+
+#banner-full img {
+	width: 100%;
+	height: auto;
+	margin-bottom: -6px;
+}
+
+#banner-text {
+	position: absolute;
+	left: 8%;
+	font-family: 'Indie Flower', cursive;
+	text-shadow: 0 0 12px #fff;
+}
+
+#banner-text h1 {
+	font-size: 21px;
+	font-weight: bold;
+	margin: 10px 0;
+	color: #000;
+}
+
+#banner-text h2 {
+	font-size: 14px;
+	margin: 0;
+	color: #555;
+}
+
+#content-column {
+	padding-top: 15px;
+	text-align: center;
+}
+
+#column-filler {
+	height: 1000px;
+	padding: 0 20px;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+}
+
+#column-filler-small {
+	height: 1000px;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+}
