@@ -48,7 +48,7 @@ body {
 }
 
 #column-filler {
-	height: 1000px;
+	height: 3000px;
 	padding: 0 20px;
 	position: fixed;
 	bottom: 0;
@@ -56,7 +56,7 @@ body {
 }
 
 #column-filler-small {
-	height: 1000px;
+	height: 3000px;
 	padding: 0;
 	position: fixed;
 	bottom: 0;
@@ -113,4 +113,83 @@ body {
 	position: absolute;
 	bottom: 0;
 	left:0;
+}
+
+.portfolio {
+	margin: 25px 0 10px;
+}
+
+.portfolio h3 {
+	margin: 10px 10px 8px;
+}
+
+.portfolio-header {
+	font-family: 'Indie Flower', cursive;
+	color: #fff;
+	text-align: left;
+	background-color: #999;
+	border: 1px solid #999;
+	border-bottom: none;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.portfolio-body {
+	border: 1px solid #999;
+	border-top: none;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.websites {
+	background-color: #ff2f2f;
+	background-image: url('port-websites.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.logos {
+	background-color: #0076cc;
+	background-image: url('port-logos.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.apps {
+	background-color: #f6a400;
+	background-image: url('port-apps.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.artprep {
+	background-color: #00cc20;
+	background-image: url('port-artprep.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.music {
+	background-color: #7900da;
+	background-image: url('port-music.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.portfolio-body img{
+	width: 100%;
+	height: auto;
+	border: 1px solid #999;
+	border-radius: 7px;
+}
+
+.portfolio-item {
+	margin: 10px 0;
+	padding: 0 !important;
+	text-align: left;
+	border-bottom: 1px solid #999;
+}
+
+.portfolio-item a {
+	text-decoration: underline;
 }
