@@ -1,17 +1,23 @@
 $(document).ready(function() {
-	var curHeight = $('#banner-full').height();
+	var curWidth = $('#banner-full').width();
 	var $bannerPrimaryText = $('.banner-primary-text');
 	var $bannerSecondaryText = $('.banner-secondary-text');
-	var primaryFontSize = (curHeight * 0.15) + "px";
-	var secondaryFontSize = (curHeight * 0.082) + "px";
-
+	
+	// Font sizes set based on a fraction of the banner width
+	var primaryFontFraction = 0.058
+	var secondaryFontFraction = 0.041
+	
+	// Set banner font sizes on initial page load
+	var primaryFontSize = (curWidth * primaryFontFraction) + "px";
+	var secondaryFontSize = (curWidth * secondaryFontFraction) + "px";
 	$bannerPrimaryText.css({fontSize: primaryFontSize});
 	$bannerSecondaryText.css({fontSize: secondaryFontSize});
 
+	// Set banner font sizes on window resize
 	$(window).resize(function() {
-		curHeight = $('#banner-full').height();
-		var primaryFontSize = (curHeight * 0.15) + "px";
-		var secondaryFontSize = (curHeight * 0.082) + "px";
+		curWidth = $('#banner-full').width();
+		var primaryFontSize = (curWidth * primaryFontFraction) + "px";
+		var secondaryFontSize = (curWidth * secondaryFontFraction) + "px";
 		$bannerPrimaryText.css({fontSize: primaryFontSize});
 		$bannerSecondaryText.css({fontSize: secondaryFontSize});
 	});
