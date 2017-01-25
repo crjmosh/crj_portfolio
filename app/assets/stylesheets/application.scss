@@ -9,6 +9,7 @@ body {
 	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 	position: relative;
 	z-index: 2;
+	overflow-y: hidden;
 }
 
 #banner-full {
@@ -18,8 +19,7 @@ body {
 
 #banner-full img {
 	width: 100%;
-	height: auto;
-	margin-bottom: -6px;
+	margin-bottom: -7px;
 }
 
 #banner-text {
