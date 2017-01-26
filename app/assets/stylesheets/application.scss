@@ -181,6 +181,7 @@ body {
 	height: auto;
 	border: 1px solid #999;
 	border-radius: 7px;
+	margin-bottom: 10px;
 }
 
 .portfolio-item {
@@ -192,4 +193,36 @@ body {
 
 .portfolio-item a {
 	text-decoration: underline;
+}
+
+.portfolio-item:last-child {
+	border-bottom: none;
+}
+
+.portfolio-infobox {
+	margin: 10px 0 0;
+	color: #333;
+	background-color: #f2f2f2;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+}
+
+.portfolio-infobox p {
+	margin: 3px;
+}
+
+iframe {
+	margin-bottom: 20px;
+}
+
+.logobox {
+	padding: 5px !important;
+}
+
+.logobox img {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	border: none;
 }
