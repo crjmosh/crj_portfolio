@@ -129,7 +129,7 @@ body {
 	text-align: left;
 	background-color: #999;
 	border: 1px solid #999;
-	border-bottom: none;
+	/*border-bottom: none;*/
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
@@ -141,11 +141,24 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
+.portfolio-body img{
+	width: 100%;
+	height: auto;
+	border: 1px solid #999;
+	border-radius: 7px;
+	margin-bottom: 10px;
+}
+
 .websites {
 	background-color: #ff2f2f;
 	background-image: url('port-websites.jpg');
 	background-position: right center;
 	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.websites-body {
+	display: none;
 }
 
 .logos {
@@ -153,6 +166,11 @@ body {
 	background-image: url('port-logos.jpg');
 	background-position: right center;
 	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.logos-body {
+	display: none;
 }
 
 .apps {
@@ -160,6 +178,11 @@ body {
 	background-image: url('port-apps.jpg');
 	background-position: right center;
 	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.apps-body {
+	display: none;
 }
 
 .artprep {
@@ -167,6 +190,11 @@ body {
 	background-image: url('port-artprep.jpg');
 	background-position: right center;
 	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.artprep-body {
+	display: none;
 }
 
 .music {
@@ -174,14 +202,11 @@ body {
 	background-image: url('port-music.jpg');
 	background-position: right center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
-.portfolio-body img{
-	width: 100%;
-	height: auto;
-	border: 1px solid #999;
-	border-radius: 7px;
-	margin-bottom: 10px;
+.music-body {
+	display: none;
 }
 
 .portfolio-item {
