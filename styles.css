@@ -4,6 +4,7 @@ html, body {
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
     color: #212529;
+    background-color: #212529;
 }
 .btn {
     color: #fff;
@@ -17,41 +18,11 @@ html, body {
     color: #fff;
     text-decoration: none;
 }
+.btn-stack {
+    margin-top: 1.25rem;
+}
 .img-responsive {
     width: 100%;
-}
-
-/* SECTION STYLES */
-.section-padding {
-    padding: 4rem 0;
-}
-.section-green {
-    background-color: #456c3a;
-    color: #212529;
-}
-.section-darkgray {
-    background-color: #212529;
-    color: #fff;
-}
-.section-white {
-    background-color: #fff;
-    color: #212529;
-}
-
-/* HEADER */
-.header-bg {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1920px;
-    background-image: url('./img/CRJ-header_bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.header-textbox {
-    padding: 2rem;
-    background-color: rgba(255,255,255,0.85);
-    text-transform: uppercase;
 }
 h1 {
     font-size: 3.5rem;
@@ -69,6 +40,177 @@ h4 {
     font-size: 1.5rem;
     line-height: 1.1;
 }
-.header-buttons_container {
-    margin-top: 1.25rem;
+
+/* SECTION STYLES */
+.section-padding {
+    padding: 4rem 0;
+}
+.section-green {
+    background-color: #456c3a;
+    color: #212529;
+}
+.section-darkgray {
+    background-color: #212529;
+    background: linear-gradient(to bottom right, #292d31, #212529);
+    color: #fff;
+}
+.section-white {
+    background-color: #fff;
+    color: #212529;
+}
+
+/* HEADER */
+#header {
+    position: relative;
+}
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    background-image: url('./img/CRJ-header_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-textbox {
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* SKILLS SECTION */
+.skill-wrapper {
+    margin: 25px 0;
+}
+.skill-wrapper img {
+    margin-bottom: 0.75rem;
+    padding: 0 35px;
+}
+.skill-title {
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+.skill-squeeze {
+    padding: 0 10%;
+}
+.skill-small .skill-wrapper {
+    margin-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 1199px) {
+    .header-bg {
+        /*background-position: 41% center;*/
+    }
+    .skill-title {
+        font-size: 1.25rem;
+    }
+}
+@media(max-width: 991px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .skill-wrapper {
+        margin: 20px 0;
+    }
+    .skill-wrapper img {
+        margin-bottom: 0.65rem;
+        padding: 0 25px;
+    }
+    .skill-title {
+        font-size: 1rem;
+    }
+    .skill-small .skill-title {
+        font-size: 0.85rem;
+    }
+}
+@media(max-width: 767px) {
+    .header-bg {
+        position: relative;
+        height: 250px;
+    }
+    #header .container-fluid > .row > [class*='col-'] {
+        padding: 0;
+    }
+    .header-textbox {
+        padding: 2rem 1.5rem;
+        background-color: #fff;
+        text-align: center;
+        white-space: normal;
+    }
+    .skill-wrapper {
+        margin: 15px 0;
+    }
+    .skill-wrapper img {
+        margin-bottom: 0.6rem;
+        padding: 0 15px;
+    }
+    .skill-small .skill-wrapper img {
+        padding: 0 10px;
+    }
+    .skill-title {
+        font-size: 1rem;
+    }
+    .skill-small .skill-title {
+        font-size: 0.65rem;
+    }
+    .footer-headshot {
+        margin-bottom: 1.25rem;
+    }
+    .footer-text {
+        text-align: center;
+    }
+}
+@media(max-width: 575px) {
+    .header-bg {
+        background-position: 60% center;
+    }
+    .skill-squeeze {
+        padding: 0;
+    }
+    .skill-wrapper {
+        margin: 10px 0;
+    }
+    .skill-wrapper:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .skill-wrapper img {
+        float: left;
+        width: 30%;
+    }
+    .skill-small {
+        border-top: 1px solid #3a3a3a;
+        padding-top: 15px;
+    }
+    .skill-small .skill-wrapper img {
+        padding: 0 30px;
+    }
+    .skill-title {
+        position: absolute;
+        left: 34%;
+        top: 47%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .skill-small .skill-title {
+        font-size: 1.15rem;
+    }
 }
