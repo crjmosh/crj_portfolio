@@ -101,7 +101,7 @@ h4 {
 }
 .skill-wrapper img {
     margin-bottom: 0.75rem;
-    padding: 0 35px;
+    padding: 0 45px;
 }
 .skill-title {
     font-size: 1.5rem;
@@ -128,6 +128,9 @@ h4 {
 .projects-columns:nth-child(odd) > div:nth-child(2) {
     order: 1;
 }
+.project-title-mobile {
+    margin-bottom: 1rem;
+}
 
 /* MEDIA QUERIES */
 @media(max-width: 1199px) {
@@ -136,6 +139,9 @@ h4 {
     }
     .skill-title {
         font-size: 1.25rem;
+    }
+    .skill-wrapper img {
+        padding: 0 35px;
     }
 }
 @media(max-width: 991px) {
@@ -182,7 +188,6 @@ h4 {
     .header-textbox {
         padding: 2rem 1.5rem;
         background-color: #fff;
-        text-align: center;
         white-space: normal;
     }
     .skill-wrapper {
@@ -214,9 +219,6 @@ h4 {
     }
     .footer-headshot {
         margin-bottom: 1.25rem;
-    }
-    .footer-text {
-        text-align: center;
     }
 }
 @media(max-width: 575px) {
